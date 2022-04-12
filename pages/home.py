@@ -30,7 +30,7 @@ def app():
     st.title('Object Detection Model using InceptionV3')
 
     st.write('Blessmore Majongwe')
-    st.write('Samatha Jowa')
+    st.write('Samantha Jowa')
 
     hs1, hs2, hs3 = st.columns([1,4,2])
     with st.sidebar:
@@ -38,7 +38,7 @@ def app():
             time.sleep(3)
             st.success("WELCOME TO  OUR OBJECT PRIDICTION APP")
             st.success("DONE BY BLESSMORE MAJONGWE")
-            st.success("SAMATHA JOWA")
+            st.success("SAMANTHA JOWA")
     
     
     with hs2:
