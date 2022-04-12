@@ -31,7 +31,12 @@ def app():
     st.write('Samatha Jowa')
 
     hs1, hs2, hs3 = st.columns([1,4,2])
-
+    with st.sidebar:
+    with st.spinner("Loading..."):
+        time.sleep(3)
+    st.success("WELCOME TO  OUR OBJECT PRIDICTION APP")
+    st.success("DONE BY BLESSMORE MAJONGWE")
+    st.success("SAMATHA JOWA")
     with hs2:
         h_search = st.text_input("Search for objects in video")
         if h_search.lower() in detected_obj:
