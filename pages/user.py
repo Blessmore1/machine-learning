@@ -35,7 +35,16 @@ def app():
     rez = "not found"
 
 
-    f = st.file_uploader("Upload video")
+    #f = st.file_uploader("Upload video")
+    f = st.file_uploader("Upload video", type=["mp4", "avi"])
+    if f is not None:
+            path = video_file.name
+            with open(path, mode='wb') as f:
+                f.write(video_file.read())
+                st.success("Saved File")
+                video_file = open(path, "rb").read()
+                st.video(video_file)
+            cap = cv2.VideoCapture(path)
 
     s1, s2, s3 = st.columns([1,4,2])
     with s1:
