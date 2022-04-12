@@ -12,7 +12,7 @@ detected_obj = ['1 quill','2 boathouse','3 torch','4 bow_tie','5 beaker','6 vaul
 '14 monitor','15 water_jug','16 eel','17 suit','18 pier','19 jean','20 barbershop','21 lakeside','22 monastery','23 West_Highland_white_terrier','24 web_site','25 eggnog',
 '26 saltshaker','27 hand-held_computer','28 beer_glass','29 fountain','30 balance_beam','31 candle','32 stage','33 groom','34 plane','35 potters_wheel',
 '36 coffee_mug','37 valley','38 cellular_telephone','39 steel_arch_bridge']
-detected_obj=[]
+
 '''
 '''
 def filter_frame(txt_search):
@@ -21,6 +21,7 @@ def filter_frame(txt_search):
     indices = [i for i, s in enumerate(files) if txt_search.lower() in s]
     return files[indices[0]]
 '''
+detected_obj=[]
 def app():
     global h_rez
 
