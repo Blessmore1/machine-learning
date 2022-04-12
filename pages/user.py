@@ -38,12 +38,12 @@ def app():
     #f = st.file_uploader("Upload video")
     f = st.file_uploader("Upload video", type=["mp4", "avi"])
     if f is not None:
-            path = video_file.name
+            path = f.name
             with open(path, mode='wb') as f:
                 f.write(video_file.read())
                 st.success("Saved File")
-                video_file = open(path, "rb").read()
-                st.video(video_file)
+                f = open(path, "rb").read()
+                st.video(f)
             cap = cv2.VideoCapture(path)
 
     s1, s2, s3 = st.columns([1,4,2])
