@@ -32,7 +32,7 @@ def app():
 
     global rez
 
-    rez = "..."
+    rez = "not found"
 
 
     f = st.file_uploader("Upload video")
