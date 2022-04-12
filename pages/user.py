@@ -62,7 +62,7 @@ def app():
         
     with s3:
         st.write('Search results')
-        if f is None:
+        if f is  None:
             status = st.write(f'{search} ...')
         else:
             status = st.write(f'{search} {rez}')
@@ -73,7 +73,7 @@ def app():
         col1, col2 = st.columns([2,6])
 
         with col1:
-            if f not None:
+            if f is not None:
                 st.write("Objects in video")
                 for i in range(len(detected_obj)):
                     st.write(str(i+1) +  " "+str(detected_obj[i]))
