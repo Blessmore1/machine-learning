@@ -45,14 +45,14 @@ def app():
     
         search = st.text_input("Search for objects in video")
         if search in detected_obj:
-            rez = "Found"
+            rez = " Found"
         else:
-            rez = "Not Found"
+            rez = " Not Found"
         
     with s3:
         st.write('Search results')
         if f is None:
-            status = st.write(f'{search} ...')
+            status = st.write(f'{search} {rez}')
         else:
             status = st.write(f'{search} {rez}')
 
