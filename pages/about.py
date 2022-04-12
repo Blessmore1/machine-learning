@@ -11,8 +11,8 @@ def app():
 
     b1,m1,l1 = st.columns([3,1,3])
     with b1:
-        st.write('Genius Mpala')
-        st.write('geniustuta@gmail.com')
+        st.write('Blessmore')
+        st.write('blessmoremajongwe@gmail.com')
     with m1:
         st.write("|")
     with l1:
