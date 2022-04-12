@@ -52,7 +52,7 @@ def app():
     with s3:
         st.write('Search results')
         if f is None:
-            status = st.write(f'{search} {rez}')
+            status = st.write(f'{search} ...')
         else:
             status = st.write(f'{search} {rez}')
 
