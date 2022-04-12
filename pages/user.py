@@ -5,17 +5,18 @@ from Base_app import *
 from Model import *
 from Video import *
 import time
-
+'''
 def filter_frame(txt_search):
     files = [f for f in os.listdir("./encoded_images") if os.path.isfile(os.path.join("./encoded_images", f))]
     files.sort(key = lambda x: int(x.split()[1][:-4]))
     indices = [i for i, s in enumerate(files) if txt_search.lower() in s]
     return files[indices[0]]
-
+'''
+'''
 files = [f for f in os.listdir("./encoded_images") if os.path.isfile(os.path.join("./encoded_images", f))]
 fi = [i.split()[0] for i in files] 
 detected_obj = list(set(fi))
-
+'''
 with st.sidebar:
     with st.spinner("Loading..."):
         time.sleep(3)
