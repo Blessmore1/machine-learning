@@ -22,6 +22,12 @@ detected_obj = ['quill',' boathouse','torch','bow_tie',' beaker','vault',' books
 'saltshaker','hand-held_computer','beer_glass','fountain','balance_beam','candle','stage',' groom','plane','potters_wheel',
 'coffee_mug','valley','cellular_telephone','steel_arch_bridge']
 
+with st.sidebar:
+    with st.spinner("Loading..."):
+        time.sleep(3)
+        st.success("WELCOME TO  OUR OBJECT PRIDICTION APP")
+        st.success("DONE BY BLESSMORE MAJONGWE")
+        st.success("SAMATHA JOWA")
 def app():
 
     global rez
