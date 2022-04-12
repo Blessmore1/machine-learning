@@ -40,7 +40,7 @@ def app():
     if f is not None:
             path = f.name
             with open(path, mode='wb') as f:
-                f.write(video_file.read())
+                f.write(f.read())
                 st.success("Saved File")
                 f = open(path, "rb").read()
                 st.video(f)
@@ -71,9 +71,10 @@ def app():
         col1, col2 = st.columns([2,6])
 
         with col1:
-            st.write("Objects in video")
-            for i in range(len(detected_obj)):
-                st.write(str(i+1) +  " "+str(detected_obj[i]))
+            if f not None:
+                st.write("Objects in video")
+                for i in range(len(detected_obj)):
+                    st.write(str(i+1) +  " "+str(detected_obj[i]))
         with col2:
 
             if f is not None:
