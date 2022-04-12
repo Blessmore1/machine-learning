@@ -17,10 +17,10 @@ files = [f for f in os.listdir("./encoded_images") if os.path.isfile(os.path.joi
 fi = [i.split()[0] for i in files] 
 detected_obj = list(set(fi))
 '''
-detected_obj = ['1 quill','2 boathouse','3 torch','4 bow_tie','5 beaker','6 vault','7 bookshop','8 dough','9 Windsor_tie','10 restaurant','11 palace','12 cocktail_shaker',
-'14 monitor','15 water_jug','16 eel','17 suit','18 pier','19 jean','20 barbershop','21 lakeside','22 monastery','23 West_Highland_white_terrier','24 web_site','25 eggnog',
-'26 saltshaker','27 hand-held_computer','28 beer_glass','29 fountain','30 balance_beam','31 candle','32 stage','33 groom','34 plane','35 potters_wheel',
-'36 coffee_mug','37 valley','38 cellular_telephone','39 steel_arch_bridge']
+detected_obj = ['quill',' boathouse','torch','bow_tie',' beaker','vault',' bookshop',' dough',' Windsor_tie',' restaurant',' palace',' cocktail_shaker',
+' monitor',' water_jug',' eel',' suit',' pier','jean','barbershop','lakeside','monastery','West_Highland_white_terrier',' web_site','eggnog',
+'saltshaker','hand-held_computer','beer_glass','fountain','balance_beam','candle','stage',' groom','plane','potters_wheel',
+'coffee_mug','valley','cellular_telephone','steel_arch_bridge']
 
 with st.sidebar:
     with st.spinner("Loading..."):
